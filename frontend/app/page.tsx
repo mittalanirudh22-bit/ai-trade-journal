@@ -54,7 +54,7 @@ export default function Home() {
     try {
 
       const response = await fetch(
-        "http://127.0.0.1:8000/upload",
+        "https://ai-trade-journal-1.onrender.com/upload",
         {
           method: "POST",
           body: formData,
@@ -81,7 +81,7 @@ export default function Home() {
     try {
 
       const response = await fetch(
-        "http://127.0.0.1:8000/ai-insights",
+        "https://ai-trade-journal-1.onrender.com/ai-insights",
         {
           method: "POST",
 
@@ -1092,7 +1092,7 @@ const dailyPnlData =
                   onClick={async () => {
 
                     await fetch(
-                      `http://127.0.0.1:8000/update-trade/${editingTrade.id}`,
+                      `https://ai-trade-journal-1.onrender.com/update-trade/${editingTrade.id}`,
                       {
                         method: "PUT",
 
